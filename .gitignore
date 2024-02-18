@@ -5,5 +5,5 @@ models/NeRCo/results/LSRW
 models/NeRCo/saves/LOL
 models/NeRCo/saves/LSRW
 models/NeRCo/YOLO/out_imgs
-models/NeRCo/YOLO/yolo_files
+models/NeRCo/YOLO/yolo_files/yolov3.weights
 
