@@ -1,0 +1,57 @@
+Total Number of Objects/Classes Detected: 39
+Total Detection Breakdown
+cat: 18
+refrigerator: 1
+dog: 3
+sofa: 2
+person: 4
+bicycle: 3
+traffic light: 1
+pottedplant: 2
+pizza: 1
+car: 2
+bench: 1
+chair: 1
+
+Per Image Breakdown
+2015_03066_fake_B.png => cat: 1
+2015_03064_fake_B.png => 
+2015_03077_fake_B.png => refrigerator: 1 | dog: 1
+2015_03044_fake_B.png => cat: 1
+2015_03078_fake_B.png => 
+2015_03053_fake_B.png => cat: 2 | sofa: 1
+2015_03057_fake_B.png => 
+2015_03070_fake_B.png => person: 1
+2015_03061_fake_B.png => 
+2015_03043_fake_B.png => cat: 1 | sofa: 1
+2015_03052_fake_B.png => bicycle: 1 | traffic light: 1
+2015_03046_fake_B.png => cat: 1
+2015_03065_fake_B.png => 
+2015_03075_fake_B.png => cat: 1
+2015_03082_fake_B.png => 
+2015_03080_fake_B.png => dog: 1
+2015_03076_fake_B.png => pottedplant: 1
+2015_03047_fake_B.png => dog: 1
+2015_03072_fake_B.png => cat: 1
+2015_03062_fake_B.png => 
+2015_03081_fake_B.png => cat: 1
+2015_03074_fake_B.png => bicycle: 2
+2015_03063_fake_B.png => cat: 1
+2015_03060_fake_B.png => cat: 1
+2015_03054_fake_B.png => pizza: 1
+2015_03051_fake_B.png => 
+2015_03049_fake_B.png => person: 1
+2015_03069_fake_B.png => cat: 1
+2015_03055_fake_B.png => 
+2015_03079_fake_B.png => person: 1 | car: 2
+2015_03071_fake_B.png => cat: 1
+2015_03050_fake_B.png => cat: 1
+2015_03045_fake_B.png => cat: 1
+2015_03067_fake_B.png => 
+2015_03059_fake_B.png => person: 1 | bench: 1
+2015_03056_fake_B.png => 
+2015_03042_fake_B.png => cat: 1
+2015_03073_fake_B.png => pottedplant: 1
+2015_03048_fake_B.png => chair: 1 | cat: 1
+2015_03058_fake_B.png => 
+2015_03068_fake_B.png => cat: 1
