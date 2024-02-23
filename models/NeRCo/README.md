@@ -39,15 +39,4 @@ CUDA_VISIBLE_DEVICES=0 python test.py --dataroot ./dataset --name LOL --preproce
 Please reference main repository above for training.
 
 ## 🔎 YOLO
-First download the weights file (same as LabA1) in the yolo_files folder by using the following command:
-```
-wget https://pjreddie.com/media/files/yolov3.weights
-```
-To test YOLO on output images run:
-```
-python yolo_img_detector.py --model LOL
-```
-All input images will be pulled from the  `./results/LOL/test_latest/images` folder and will be output into out_imgs/LOL.
-
-If you find this code useful for your research, please use the following BibTeX entry.
-
+For YOLO implementation of enhancement results, please check the README in YOLO.
