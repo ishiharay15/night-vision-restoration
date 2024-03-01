@@ -20,7 +20,7 @@ YOLO/NeRCo
 YOLO/RQ-LLIE
 
 #RQ-LLIE
-models/RQ-LLIE/dataset
-models/RQ-LLIE/figures
-models/RQ-LLIE/pretrained_models
-models/RQ-LLIE/results
+RQ-LLIE/dataset
+RQ-LLIE/figures
+RQ-LLIE/pretrained_models
+RQ-LLIE/results
