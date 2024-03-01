@@ -1,25 +1,3 @@
-# Low-Light Image Enhancement with Multi-stage Residue Quantization and Brightness-aware Attention (ICCV2023)
-
-This repository contains the Pytorch codes for paper **Low-Light Image Enhancement with Multi-stage Residue Quantization and Brightness-aware Attention (ICCV (2023))**. 
-[[paper]](https://openaccess.thecvf.com/content/ICCV2023/papers/Liu_Low-Light_Image_Enhancement_with_Multi-Stage_Residue_Quantization_and_Brightness-Aware_Attention_ICCV_2023_paper.pdf)
-
-### Evaluation
-
-Download the pretrained models from [[Google Drive]](https://drive.google.com/drive/folders/1mFBjwejx1qlvILfiyzl1MQb4RjKAqyhx?usp=drive_link). And put them in the folder ___./pretrained_models___ .
-
-```
-# LOLv1
-python test_LOLv1_v2_real.py -opt options/test/LOLv1.yml
-
-# LOLv2-Real
-python test_LOLv1_v2_real.py -opt options/test/LOLv2_real.yml
-
-# LOLv2-Synthetic
-python test_LOLv2_synthetic.py -opt options/test/LOLv2_synthetic.yml
-```
-Note you need to change the **dataroot_GT** and **dataroot_LQ** to your path in the option file.
-
-
 <div align="center">
 
 # Cloned Low-Light Image Enhancement with Multi-stage Residue Quantization and Brightness-aware Attention
