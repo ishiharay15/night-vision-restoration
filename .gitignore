@@ -6,12 +6,12 @@
 **/__pycache__/
 
 #NeRCo
-models/NeRCo/dataset/testA
-models/NeRCo/dataset/testB
-models/NeRCo/results/LOL
-models/NeRCo/results/LSRW
-models/NeRCo/saves/LOL
-models/NeRCo/saves/LSRW
+NeRCo/dataset/testA
+NeRCo/dataset/testB
+NeRCo/results/LOL
+NeRCo/results/LSRW
+NeRCo/saves/LOL
+NeRCo/saves/LSRW
 
 #YOLO
 YOLO/out_imgs
