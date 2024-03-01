@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# 🌙 Welcome to EEC174BY Senior Design:\ Team Night-Vision Restoration! 🔦
+# 🌙 Welcome to EEC174BY Senior Design: <br> Team Night-Vision Restoration! 🔦
 
 <div align="left">
 
