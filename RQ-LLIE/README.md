@@ -23,19 +23,22 @@ conda activate RQ
 ```
 
 ## 🧩 Download
-Create directory `./dataset`. \
+Create directory `./dataset`.\
 The baseline for all of our models is to test on LOLv1, but model can be tested on both LOLv1 and LOLv2 (real and synthetic).\
-Download the following datasets:
+Download the following datasets:\
 LOLv1: [[Google Drive]](https://drive.google.com/file/d/1XqnxVcvTxr11qSOy4_wVhEjIMdAGx88t/view?usp=drive_link)
 
 LOLv2: [[Google Drive]](https://drive.google.com/file/d/1iYvbYTNnFGU3tKhNuS8MNE2eXSXkSvz6/view?usp=drive_link)
 
-Create directory `./pretrained_models`. \
-Please download the folder of pre-trained model for LOLv1, LOLv2 real and synthetic and save in `./dataset`. \
-- [**RQ-LLIE trained on LOL**](https://drive.google.com/drive/folders/1mFBjwejx1qlvILfiyzl1MQb4RjKAqyhx?usp=drive_link)
+Create directory `./pretrained_models`.\
+Please download the folder of pre-trained model for LOLv1, LOLv2 real and synthetic and save in `./dataset`.\
+[**RQ-LLIE trained on LOL**](https://drive.google.com/drive/folders/1mFBjwejx1qlvILfiyzl1MQb4RjKAqyhx?usp=drive_link)
 
 ## 📋 Options
-You must specify path for datasets for **dataroot_GT** and **dataroot_LQ** in **LOLv1.yml, LOLv2_real.yml, LOLv2_synthetic.yml** found in `./options/[test or train]`.\
+You must specify path for datasets for **dataroot_GT** and **dataroot_LQ** in the following files found in `./options/[test or train]`:\
+- LOLv1.yml
+- LOLv2_real.yml
+- LOLv2_synthetic.yml
 **Example:**
 ```
 dataroot_GT: dataset/LOLv1/eval15/high
