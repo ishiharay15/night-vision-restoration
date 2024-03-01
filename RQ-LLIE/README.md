@@ -2,30 +2,6 @@
 
 This repository contains the Pytorch codes for paper **Low-Light Image Enhancement with Multi-stage Residue Quantization and Brightness-aware Attention (ICCV (2023))**. 
 [[paper]](https://openaccess.thecvf.com/content/ICCV2023/papers/Liu_Low-Light_Image_Enhancement_with_Multi-Stage_Residue_Quantization_and_Brightness-Aware_Attention_ICCV_2023_paper.pdf)
----
-## Overview
-In this paper, we propose a brightness-aware network with normal-light priors based on brightness-aware attention and residualquantized codebook. To achieve a more natural and realistic enhancement, we design a query module to obtain more reliable normal-light features and fuse them with lowlight features by a fusion branch. In addition, we propose a brightness-aware attention module to further improve the robustness of the network to the brightness. Extensive experimental results on both real-captured and synthetic data show that our method outperforms existing state-of-the-art methods.
-![introduction image](./figures/introduction.png)
-
-## Architecture
-![Atchitecture image](./figures/structure.png)
-Figure 2: Architectures of the proposed three-stage framework for low-light image enhancement.
-
-## Usage
-### Download the RQ-LLIE repository
-0. Requirements are Python 3 and PyTorch 1.8.0.
-1. Download this repository via git
-```
-git clone https://github.com/LiuYunlong99/RQ-LLIE
-```
-or download the [zip file](https://github.com/LiuYunlong99/RQ-LLIE/archive/refs/heads/main.zip) manually.
-
-### Prepare the Dataset
-Download the following datasets:
-
-LOLv1: [[Google Drive]](https://drive.google.com/drive/folders/1ncC-XWo9Fag8LfQ8RhiabZKar6kLrAI8?usp=drive_link)
-
-LOLv2: [[Google Drive]](https://drive.google.com/drive/folders/11LW6jLvGHShnQIcQ_wxnUwg9oRKtmARj?usp=sharing)
 
 ### Evaluation
 
@@ -43,25 +19,71 @@ python test_LOLv2_synthetic.py -opt options/test/LOLv2_synthetic.yml
 ```
 Note you need to change the **dataroot_GT** and **dataroot_LQ** to your path in the option file.
 
-### Training
-Train the model on the corresponding dataset using the train config. For example, the training on LOLv1:
+
+<div align="center">
+
+# Cloned Low-Light Image Enhancement with Multi-stage Residue Quantization and Brightness-aware Attention
+
+Cloned from: [**Low-Light Image Enhancement with Multi-stage Residue Quantization and Brightness-aware Attention**](https://github.com/LiuYunlong99/RQ-LLIE)
+
+Please reference the above repository for any issues with this implementation.
+
+<div align="left">
+
+## Prerequisites
+- Linux or macOS
+- Python 3
+- NVIDIA GPU + CUDA CuDNN
+- PyTorch 1.8.0.
+
+## 🔑 Setup
+1. Clone the repository and set up environment:
 ```
-python -m torch.distributed.launch --nproc_per_node 1 --master_port 4320 train.py -opt options/train/LOLv1.yml --launcher pytorch
+git clone https://github.com/LiuYunlong99/RQ-LLIE.git
+conda create --name [RQ or RQ-LLIE] python=3.9.18
+conda activate RQ
 ```
 
-## Acknowledgements
-This source code is inspired by [SNR(CVPR22)](https://github.com/dvlab-research/SNR-Aware-Low-Light-Enhance).
+## 🧩 Download
+Create directory `./dataset`. \
+The baseline for all of our models is to test on LOLv1, but model can be tested on both LOLv1 and LOLv2 (real and synthetic).\
+Download the following datasets:
+LOLv1: [[Google Drive]](https://drive.google.com/file/d/1XqnxVcvTxr11qSOy4_wVhEjIMdAGx88t/view?usp=drive_link)
 
-## Citation Information
-If you find our work useful for your research, please consider giving this project a star and citing the following papers :)
+LOLv2: [[Google Drive]](https://drive.google.com/file/d/1iYvbYTNnFGU3tKhNuS8MNE2eXSXkSvz6/view?usp=drive_link)
 
+Create directory `./pretrained_models`. \
+Please download the folder of pre-trained model for LOLv1, LOLv2 real and synthetic and save in `./dataset`. \
+- [**RQ-LLIE trained on LOL**](https://drive.google.com/drive/folders/1mFBjwejx1qlvILfiyzl1MQb4RjKAqyhx?usp=drive_link)
+
+## 📋 Options
+You must specify path for datasets for **dataroot_GT** and **dataroot_LQ** in **LOLv1.yml, LOLv2_real.yml, LOLv2_synthetic.yml** found in `./options/[test or train]`.\
+**Example:**
 ```
-@InProceedings{Liu_2023_ICCV,
-    author    = {Liu, Yunlong and Huang, Tao and Dong, Weisheng and Wu, Fangfang and Li, Xin and Shi, Guangming},
-    title     = {Low-Light Image Enhancement with Multi-Stage Residue Quantization and Brightness-Aware Attention},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2023},
-    pages     = {12140-12149}
-}
+dataroot_GT: dataset/LOLv1/eval15/high
+dataroot_LQ: dataset/LOLv1/eval15/low
 ```
+In `options.py` specify CUDA device. Default is set to:
+```
+CUDA_VISIBLE_DEVICES=0
+```
+
+## 🚀 Quick Run
+- Test with the pre-trained model:
+```
+# LOLv1
+python test_LOLv1_v2_real.py -opt options/test/LOLv1.yml
+
+# LOLv2-Real
+python test_LOLv1_v2_real.py -opt options/test/LOLv2_real.yml
+
+# LOLv2-Synthetic
+python test_LOLv2_synthetic.py -opt options/test/LOLv2_synthetic.yml
+```
+- The test results will be saved to a directory here: `./results/[LOLv--]/images`.
+
+## 🤖 Training
+Please reference main repository above for training.
+
+## 🔎 YOLO
+For YOLO implementation of enhancement results, please check the README in YOLO.

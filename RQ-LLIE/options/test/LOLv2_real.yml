@@ -13,8 +13,8 @@ datasets:
   test:  # the 1st test dataset
     name: test
     mode: video_samesize_lol2
-    dataroot_GT: /home/liuyunlong/project/dataset/LOL-v2/Real_captured/Test/Normal
-    dataroot_LQ: /home/liuyunlong/project/dataset/LOL-v2/Real_captured/Test/Low
+    dataroot_GT: dataset/LOL-v2/Real_captured/Test/Normal
+    dataroot_LQ: dataset/LOL-v2/Real_captured/Test/Low
     train_size: [600, 400]
     cache_data: true
     N_frames: 5
