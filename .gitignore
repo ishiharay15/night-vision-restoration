@@ -14,9 +14,10 @@ models/NeRCo/saves/LOL
 models/NeRCo/saves/LSRW
 
 #YOLO
-models/YOLO/YOLO/out_imgs
-models/YOLO/yolo_files/yolov3.weights
-models/YOLO/NeRCo
+YOLO/out_imgs
+YOLO/yolo_files/yolov3.weights
+YOLO/NeRCo
+YOLO/RQ-LLIE
 
 #RQ-LLIE
 models/RQ-LLIE/dataset
