@@ -13,8 +13,8 @@ datasets:
   test:  # the 1st test dataset
     name: test
     mode: video_samesize_lol
-    dataroot_GT: dataset/LOLv1/eval15/high
-    dataroot_LQ: dataset/LOLv1/eval15/low
+    dataroot_GT: dataset/LOLv1/our485/high
+    dataroot_LQ: dataset/LOLv1/our485/low
     train_size: [600, 400]
     cache_data: true
     N_frames: 5

@@ -2,6 +2,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
+
+torch.cuda.empty_cache()
+
 # hidden_list = [256,256]
 # hidden_list = [256,256,256,256]
 hidden_list = [256,256,256]
@@ -116,6 +119,7 @@ class NRN(nn.Module):
                     rel_cell = cell.clone()
                     rel_cell[:, :, 0] *= feat.shape[-2]
                     rel_cell[:, :, 1] *= feat.shape[-1]
+                    
                     inp = torch.cat([inp, rel_cell], dim=-1)
 
                 bs, q = coord.shape[:2]
