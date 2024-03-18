@@ -33,6 +33,6 @@ For YOLO with detection summary:
 ```
 python detect_with_summary.py --weights yolov5s.pt --source ../
 ```
-All input images will be pulled from the input folder and will be output into [Model]/out_imgs.\
+All input images will be pulled from the input folder and will be output into [Model]/out_imgs.
 
 For full documentation and usage, check out the [YOLOv5 repository](https://github.com/ultralytics/yolov5?tab=readme-ov-file) and [original documentation](https://docs.ultralytics.com/yolov5/quickstart_tutorial/#inference-with-pytorch-hub).
