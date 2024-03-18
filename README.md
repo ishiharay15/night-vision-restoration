@@ -42,13 +42,13 @@ Additionally, we will employ SSIM, which compares luminance, contrast, and struc
 The mean average precision of a model is the average of its precision results across all detected classes. The precision of a model for a class for a singular image is the number of correct detections over the number of total ground truth objects in the image. A correct detection is defined as a detection bounding box that reaches a specified IoU threshold. The average precision of of the class for a model is the averages of these precision values of a whole dataset.
 
 ## Results:
-Our models showed robust results in enhancing brightness, color, and reducing noise in test images.
+Our models showed robust results in enhancing brightness, color, and reducing noise in test images.\
 ![Model Results](./figures/enhancement_results.jpg)
 
-After enhancement, YOLOv5 was applied in detecting 12 images from the [Exclusively Dark Image Dataset](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset). Results are below:
+After enhancement, YOLOv5 was applied in detecting 12 images from the [Exclusively Dark Image Dataset](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset). Results are below:\
 ![YOLOv5 Class Results](./figures/yolo_class_results.jpg)
 
-YOLOv5 was then applied to [Seeing Dynamic Scene in the Dark: High-Quality Video Dataset](https://github.com/dvlab-research/SDSD) that had been enhanced with the above models:
+YOLOv5 was then applied to [Seeing Dynamic Scene in the Dark: High-Quality Video Dataset](https://github.com/dvlab-research/SDSD) that had been enhanced with the above models:\
 ![YOLOv5 Enhanced Video Test](./figures/yolo_oppo_results.gif)
 
 ## 🔎 Running Models:
