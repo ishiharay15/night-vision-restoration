@@ -4,7 +4,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/global-structure-aware-diffusion-process-for-1/low-light-image-enhancement-on-lolv2)](https://paperswithcode.com/sota/low-light-image-enhancement-on-lolv2?p=global-structure-aware-diffusion-process-for-1)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/global-structure-aware-diffusion-process-for-1/low-light-image-enhancement-on-lolv2-1)](https://paperswithcode.com/sota/low-light-image-enhancement-on-lolv2-1?p=global-structure-aware-diffusion-process-for-1)
 
-<h2 align="center">[NeurIPS 2023] Global Structure-Aware Diffusion Process for Low-Light Image Enhancement</h2>
+<h2 align="center">*CLONED*[NeurIPS 2023] Global Structure-Aware Diffusion Process for Low-Light Image Enhancement</h2>
 
 <p align="center">
     <a href="https://arxiv.org/abs/2310.17577">ArXiv</a>
