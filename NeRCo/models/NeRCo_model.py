@@ -97,6 +97,7 @@ class NeRComodel(BaseModel):
         self.real_B = input['B' if AtoB else 'A'].to(self.device)
         self.image_paths = input['A_paths' if AtoB else 'B_paths']
 
+
     def forward(self):
         """Run forward pass; called by both functions <optimize_parameters> and <test>."""
         self.pre_A = self.netPre(self.real_A)
@@ -110,6 +111,7 @@ class NeRComodel(BaseModel):
         self.pre_A1 = self.netPre(self.fake_A)
         temp = torch.cat((self.fake_A, self.pre_A1), 1)
         self.rec_B = self.netG_A(temp)   # G_A(G_B(B))
+
 
 
     def backward_D_basic(self, netD, real, fake):

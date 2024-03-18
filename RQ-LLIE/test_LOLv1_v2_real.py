@@ -5,6 +5,7 @@ import logging
 import numpy as np
 import cv2
 import torch
+torch.cuda.empty_cache()
 from PIL import Image
 
 import utils.util as util
@@ -12,8 +13,6 @@ import data.util as data_util
 from models import create_model
 import matplotlib.pyplot as plt
 
-import os.path as osp
-import logging
 import time
 import argparse
 from collections import OrderedDict
@@ -25,7 +24,6 @@ from data import create_dataset, create_dataloader
 from models import create_model
 from scipy import io
 
-import time
 
 #### options
 parser = argparse.ArgumentParser()

@@ -45,7 +45,7 @@ def save_images(webpage, visuals, image_path, aspect_ratio=1.0, width=256):
         ims.append(image_name)
         txts.append(label)
         links.append(image_name)
-    webpage.add_images(ims, txts, links, width=width)
+    #webpage.add_images(ims, txts, links, width=width)
 
 
 class Visualizer():

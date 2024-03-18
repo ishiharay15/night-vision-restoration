@@ -35,10 +35,10 @@ Please download the folder of pre-trained model for LOLv1, LOLv2 real and synthe
 [**RQ-LLIE trained on LOL**](https://drive.google.com/drive/folders/1mFBjwejx1qlvILfiyzl1MQb4RjKAqyhx?usp=drive_link)
 
 ## 📋 Options
-You must specify path for datasets for **dataroot_GT** and **dataroot_LQ** in the following files found in `./options/[test or train]`:\
+You must specify path for datasets for **dataroot_GT** and **dataroot_LQ** in the following files found in `./options/[test or train]`:
 - LOLv1.yml
 - LOLv2_real.yml
-- LOLv2_synthetic.yml
+- LOLv2_synthetic.yml\
 **Example:**
 ```
 dataroot_GT: dataset/LOLv1/eval15/high
