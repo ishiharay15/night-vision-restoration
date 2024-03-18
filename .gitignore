@@ -2,10 +2,15 @@
 *.pth
 *.pt
 *.jpg
+*.gif
 *.png
 *.mp4
 *.mov
 **/__pycache__/
+
+#Exclude README files
+!/figures/*.jpg
+!/figures/*.gif
 
 #NeRCo
 NeRCo/dataset/testA
