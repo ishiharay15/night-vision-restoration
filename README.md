@@ -1,5 +1,3 @@
-# night-vision-restoration
-
 <div align="center">
 
 # Vision Guardian: Night-Vision Restoration! 😎
