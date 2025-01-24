@@ -5,7 +5,7 @@
 # Vision Guardian: Night-Vision Restoration! 😎
 ---
 
-![Model Results](./figures/enhancement_results.jpg)
+![YOLOv5 Enhanced Video Test](./figures/yolo_oppo_results.gif)
 
 ---
 
