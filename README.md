@@ -2,12 +2,15 @@
 
 <div align="center">
 
-# 🌙 Welcome to EEC174BY Senior Design: <br> Team 2: Night-Vision Restoration! 🔦
+# Vision Guardian: Night-Vision Restoration! 😎
+---
+
+![Model Results](./figures/enhancement_results.jpg)
+
+---
 
 <div align="left">
 
-# Vision Guardian 😎
----
 ## Overview
 This project focuses on enhancing image and video quality in low-light environments, particularly targeting the improvement of object detection in security camera footage. By addressing the challenges of lack of color and increased noise in low-light imagery, our solution aims to significantly enhance object recognition in dimly lit settings. Through the integration of noise reduction and color enhancement processes, coupled with object detection algorithms like YOLO, we aim to generate color-enhanced images with accurately detected object classes, thereby facilitating improved surveillance capabilities for security applications.
 To assess the efficacy of our methodology, we plan to employ metrics such as Peak Signal-to-Noise Ratio (PSNR), Structural Similarity Index (SSIM), and Mean Average Precision (mAP) to evaluate image quality improvements quantitatively. Additionally, we consider the compatibility of different image enhancement models with the YOLO object detection framework, ensuring optimal performance and accuracy in detecting objects within the reconstructed images. Our comprehensive approach aims to not only enhance image quality but also to optimize object detection capabilities, contributing to advancements in security surveillance effectiveness, and comprehension in low-light conditions. 
